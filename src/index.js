@@ -1,3 +1,6 @@
-import execute from "./d3bar.js";
+import * as d3 from "d3-fetch";
+import chart from "./d3map.js";
 
-execute();
+d3.json("states-data.json").then((data) => {
+  chart(data);
+});

@@ -1,12 +1,6 @@
 import * as d3 from "d3";
 
-export default function execute() {
-  d3.json("states-data.json").then((data) => {
-    chart(data);
-  });
-}
-
-function chart(data) {
+export default function chart(data) {
   let counts = data.map((d) => d.positive);
   let states = data.map((d) => d.state);
   const margin = { top: 20, right: 20, left: 40, bottom: 20 };

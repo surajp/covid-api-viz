@@ -3,9 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Covid Numbers</title>
+    <title>
+      Percentage of people who tested positive for Covid-19 by State
+    </title>
   </head>
   <body>
+    <h2>
+      Percentage of people who tested positive for Covid-19 by State
+    </h2>
+    <span style="font-weight: bold;"
+      >Adjust the colors to visualize the contrast better</span
+    >
+    <input
+      style="margin-left: 15px;"
+      type="range"
+      min="0.2"
+      max="3"
+      value="0.47"
+      id="range"
+      step="0.0001"
+    />
     <svg id="graph" />
     <script src="./main.js"></script>
   </body>
