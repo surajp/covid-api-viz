@@ -46,7 +46,6 @@ function geo(data, results) {
     state.properties.code = stateCodeMap[state.properties.name].code || "";
   });
 
-  debugger;
   svg
     .append("g")
     .attr("fill", "none")
